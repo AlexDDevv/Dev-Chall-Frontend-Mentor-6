@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Open4";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins4";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins6";
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin alignChildren($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+$color1: white;
+$color2: hsl(257, 40%, 49%);
+$color3: hsl(300, 69%, 71%);
+$font1: Open4, sans-serif;
+$font2: Poppins4, sans-serif;
+$font3: Poppins6, sans-serif;
+
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+}
+h1 {
+    font-family: $font3;
+    font-weight: 600;
+    color: $color1;
+}
+p {
+    font-family: $font1;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 25px;
+}
+button {
+    font-family: $font2;
+    font-weight: 400;
+    color: $color2;
+    cursor: pointer;
+}
